@@ -12,18 +12,13 @@ const cars = [
 
 ]
 
-// app.get('/', (request,response) => {
-//     response.send('this is request send')
-
-// })
 // app.get('/dashboard', (request,response) => {
-//     response.send(text)
-
+//     // response.sendFile(__dirname+'/dashboard.html')
+//     // response.sendFile(`${__dirname}/dashboard.html`)
+//     console.log({__dirname});
+    
+//     response.sendFile(`${__dirname}/dashboard.html`)
 // })
-app.get('/', (request,response) => {
-    // response.sendFile(__dirname+'/dashboard.html')
-    response.sendFile(`${__dirname}/dashboard.html`)
-})
 
 app.get('/api', (req, res) => {
     
@@ -43,3 +38,11 @@ app.listen(portNumber, () => {
     console.log('this is port 400');
     
 })
+    // app.get('/', (request,response) => {
+    //     response.send('this is request send')
+    
+    // })
+    // app.get('/dashboard', (request,response) => {
+    //     response.send(text)
+    
+    // })
