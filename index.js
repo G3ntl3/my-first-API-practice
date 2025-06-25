@@ -20,7 +20,7 @@ const cars = [
 //     response.sendFile(`${__dirname}/dashboard.html`)
 // })
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     
     try {
     res.status(201).json({message:cars})
